@@ -73,6 +73,9 @@ nav button{
     margin-left: 3px;
     
   }
+  .proj{
+    flex-direction: column;
+  }
 }
 .front{
   display:flex;
@@ -128,6 +131,70 @@ nav button{
   border-color:transparent;
 }
 }
+.proj{
+  display:flex;
+  justify-content: center;
+}
+.proj img{
+  display:block;
+  width:80vh;
+  height:60vh;
+  border-radius: 3px;
+}
+.proj .it1, .it2, .it3{
+  position:relative;
+  margin:40px;
+  height:370px;
+  width: 300px;
+  box-shadow: 5px 5px 20px black;
+  overflow:hidden;
+}
+.into{
+  position:absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000000bb;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.it1:hover .into {
+  bottom: 0;
+  height: 100%;
+}
+.it2:hover .into {
+  bottom: 0;
+  height: 100%;
+}
+.it3:hover .into {
+  bottom: 0;
+  height: 100%;
+}
+.proj h1{
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.proj p{
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
   .footer {
    
     opacity:1;

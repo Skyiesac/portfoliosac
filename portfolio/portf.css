@@ -19,7 +19,7 @@ nav{
 .nav_menu li{
   
   font-size:20px;
-  display: inline-block;
+ 
   padding:0px 20px;
 }
 nav button{
@@ -29,10 +29,77 @@ nav button{
  border-radius :50px;
 
 }
+@media(min-width:760px){
+  .nav_menu li{
+    display:inline-block;
+    text-decoration: none;
+  }
+  .front .allf{
+    margin-top: 10%;
+    margin-right:4%;
+    font-size: large;
+  }
+}
 
+@media (max-width:760px){
+ nav, nav ul{
+  padding:20px;
+  flex-direction:column;
+  align-items: center;
+  list-style: none;
+  margin: 4px;
+ }
+ .nav_menu ul {
+  padding:8px 10px;
+  font-size:14px;
+ justify-content: space-between; }
+  .nav_menu ul li{
+    padding:10px;
+  }
+  .front{
+    flex-direction: column;
+    align-items:center
+  }
+  .front img{
+    margin-top:50px;
+    max-width:100%;
+  }
+  .front .allf{
+    text-align:center;
+    margin-left: 3px;
+    
+  }
+}
+.front{
+  display:flex;
+  justify-content: space-between;
+}
+.front img{
+  max-width:50%;
+}
+
+ .front .head{
+    font-size:10vh;
+    font-weight:bold;
+    color:rgb(255, 255, 255);
+    margin: 4px;
+   letter-spacing:4px;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000,4px 4px 0 #000,5px 5px 0 #000, 6px 6px 0 #000,7px 7px 0 #000,8px 8px 0 #000, 9px 9px 0 #000,10px 10px 0 #000, 11px 11px 0 #000, 12px 12px 0 #000;
+  margin:20px 0;
+  }
+  .front .inner{
+    margin: 10px 0;
+    font-weight:bold;
+  }
+ .button-group {
+  display: flex;
+  
+  justify-content: center;
+  gap: 16px;
+  margin:10px 0;
+}
   .footer {
-    background: url(images/footer.jfif);
-    background-color: rgba(0, 0, 0, 1);
+   
     opacity:1;
     background-size: cover;
     text-align: center;
